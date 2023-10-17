@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "776665302887",
+    "project_id": "teclago-54f02",
+    "storage_bucket": "teclago-54f02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776665302887:android:ace06f0c545966fa3051c2",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776665302887-cff9a499nae9ib4u023ot0jmut4dbl1g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjiqeKlq5lP7lTuEEMXdwkj73hpnq8hLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776665302887-cff9a499nae9ib4u023ot0jmut4dbl1g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776665302887:android:8874d51c9a36a8e43051c2",
+        "android_client_info": {
+          "package_name": "com.example.teclago"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776665302887-cff9a499nae9ib4u023ot0jmut4dbl1g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjiqeKlq5lP7lTuEEMXdwkj73hpnq8hLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776665302887-cff9a499nae9ib4u023ot0jmut4dbl1g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

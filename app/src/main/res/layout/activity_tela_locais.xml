@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".TelaLocais">
+
+    <TextView
+        android:id="@+id/text_locais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/local_cont"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        />
+
+    <View
+        android:id="@+id/conteinerComponents"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="63dp"
+        android:background="@drawable/contener_components"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_locais"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_loja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/loja_f"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/conteinerComponents"
+        app:layout_constraintEnd_toEndOf="@id/conteinerComponents"
+        app:layout_constraintTop_toTopOf="@id/conteinerComponents" />
+
+    <Button
+        android:id="@+id/bt_loja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button"
+        android:text="@string/bt_f"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@id/conteinerComponents"
+        app:layout_constraintEnd_toEndOf="@id/conteinerComponents"
+        app:layout_constraintTop_toBottomOf="@id/text_loja"
+        />
+
+    <TextView
+        android:id="@+id/text_armazem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/loja_a"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/conteinerComponents"
+        app:layout_constraintEnd_toEndOf="@id/conteinerComponents"
+        app:layout_constraintTop_toBottomOf="@id/bt_loja" />
+
+    <Button
+        android:id="@+id/bt_armazem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button"
+        android:text="@string/bt_a"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@id/conteinerComponents"
+        app:layout_constraintEnd_toEndOf="@id/conteinerComponents"
+        app:layout_constraintTop_toBottomOf="@id/text_armazem"
+        />
+
+    <TextView
+        android:id="@+id/text_contactos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/contactos"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/conteinerComponents"
+        app:layout_constraintEnd_toEndOf="@id/conteinerComponents"
+        app:layout_constraintTop_toBottomOf="@id/bt_armazem" />
+
+    <Button
+        android:id="@+id/bt_fixo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button"
+        android:text="@string/bt_c"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@id/conteinerComponents"
+        app:layout_constraintEnd_toEndOf="@id/conteinerComponents"
+        app:layout_constraintTop_toBottomOf="@id/text_contactos"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

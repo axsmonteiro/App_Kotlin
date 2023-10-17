@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".EditarProd">
+
+    <TextView
+        android:id="@+id/text_pg_registo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_prod"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        />
+
+    <View
+        android:id="@+id/conteinerComponents"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/contener_components"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_pg_registo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:inputType="textAutoComplete"
+        android:textSize="19sp"
+        android:text="@string/tipo_prod"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/conteinerComponents"
+        app:layout_constraintStart_toStartOf="@id/conteinerComponents"
+        app:layout_constraintTop_toTopOf="@id/conteinerComponents" />
+
+    <Spinner
+        android:id="@+id/categorias_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:entries="@array/tipo"
+        android:background="@drawable/edit_text"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@id/conteinerComponents"
+        app:layout_constraintEnd_toEndOf="@id/conteinerComponents"
+        app:layout_constraintTop_toTopOf="@id/conteinerComponents"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:inputType="textAutoComplete"
+        android:textSize="19sp"
+        android:text="@string/id_prod"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/categorias_spinner"
+        app:layout_constraintEnd_toEndOf="@id/conteinerComponents"
+        app:layout_constraintStart_toStartOf="@id/conteinerComponents" />
+
+    <TextView
+        android:id="@+id/id_produto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text"
+        android:padding="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@id/conteinerComponents"
+        app:layout_constraintEnd_toEndOf="@id/conteinerComponents"
+        app:layout_constraintTop_toBottomOf="@id/categorias_spinner"
+        android:drawableRight="@drawable/ic_qr"
+        android:textColor="@color/black" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:inputType="textAutoComplete"
+        android:textSize="19sp"
+        android:text="@string/custo_prod"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/id_produto"
+        app:layout_constraintEnd_toEndOf="@id/conteinerComponents"
+        app:layout_constraintStart_toStartOf="@id/conteinerComponents" />
+    <EditText
+        android:id="@+id/custo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text"
+        android:padding="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@id/conteinerComponents"
+        app:layout_constraintEnd_toEndOf="@id/conteinerComponents"
+        app:layout_constraintTop_toBottomOf="@id/id_produto"
+        android:drawableRight="@drawable/ic_euro"
+        android:inputType="numberDecimal"
+        android:hint="Custo"
+        android:textColor="@color/black"
+        android:maxLength="10" />
+    <Button
+        android:id="@+id/bt_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:text="@string/add"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@id/conteinerComponents"
+        app:layout_constraintEnd_toEndOf="@id/conteinerComponents"
+        app:layout_constraintTop_toBottomOf="@id/custo"/>
+    <Button
+        android:id="@+id/bt_del"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:text="@string/del"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@id/conteinerComponents"
+        app:layout_constraintEnd_toEndOf="@id/conteinerComponents"
+        app:layout_constraintTop_toBottomOf="@id/bt_add"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

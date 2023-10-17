@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Teclago</string>
+    <string name="scan">Scan</string>
+    <string name="confirm">Confirmar</string>
+    <string name="edit_prod">Editar de Produto</string>
+    <string name="tipo_prod">Tipo de Produto</string>
+    <string name="id_prod">Id de Produto</string>
+    <string name="custo_prod">Custo de Produto</string>
+    <string name="add">Adicionar</string>
+    <string name="login">Login</string>
+    <string name="to_regist">Registar-se...</string>
+    <string name="registo">Registo</string>
+    <string name="to_login">Já tem uma conta? Faça login...</string>
+    <string name="vendas">O total de vendas feitas foi:</string>
+    <string name="edit">Editar</string>
+    <string name="log_out">Log-out</string>
+    <string name="registo_prod">Registo de Produto</string>
+    <string name="local_cont">Locais/Contactos</string>
+    <string name="loja_f">Local da loja fisica</string>
+    <string name="loja_a">Local do Armazem</string>
+    <string name="bt_f">Loja Fisica</string>
+    <string name="bt_a">Armazem</string>
+    <string name="contactos">Contactos</string>
+    <string name="bt_c">Telefone</string>
+    <string name="del">Apagar</string>
+    <string name="vendas_user">O total de dinheiro gasto foi:</string>
+    <string-array name="tipo">
+        <item>Motores</item>
+        <item>Bombas Elétricas</item>
+        <item>Leds</item>
+        <item>Cabos</item>
+        <item>Tubulação Hidráulica</item>
+    </string-array>
+</resources>
